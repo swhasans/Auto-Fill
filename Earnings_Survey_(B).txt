@@ -1,0 +1,8 @@
+document.getElementById('startdate_job').value = '25-09-2021';
+document.getElementById('functie_ld').value = 'Student';
+function setSelectedIndex(s, v) {for (var i = 0; i < s.options.length; i++) {if (s.options[i].text == v) {s.options[i].selected = true;return;}}}setSelectedIndex(document.getElementById("monthmultiplier"), "week");document.getElementById('monthsalary').value = '4758.00';
+document.getElementById('enddate_ld_job').value = '25-04-2022';
+document.getElementById('loondienst_soort_0').checked = false;
+document.getElementById('loondienst_soort_1').checked = true;
+document.getElementById('employer_name_ld').value = 'Dr. Fehmida Hussain';
+document.getElementById('work_location_ld').value = 'Middlesex University';

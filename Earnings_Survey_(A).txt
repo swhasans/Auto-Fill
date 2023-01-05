@@ -1,0 +1,8 @@
+document.getElementById('startdate_job').value = '27-10-2021';
+document.getElementById('functie_ld').value = 'Postgraduate Student (Student Researcher)';
+function setSelectedIndex(s, v) {for (var i = 0; i < s.options.length; i++) {if (s.options[i].text == v) {s.options[i].selected = true;return;}}}setSelectedIndex(document.getElementById("monthmultiplier"), "period");document.getElementById('monthsalary').value = '15000.00';
+document.getElementById('enddate_ld_job').value = '27-10-2022';
+document.getElementById('loondienst_soort_0').checked = true;
+document.getElementById('loondienst_soort_1').checked = false;
+document.getElementById('employer_name_ld').value = 'Dr. Joseph John';
+document.getElementById('work_location_ld').value = 'Middlesex University';
