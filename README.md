@@ -22,10 +22,10 @@ Auto-Fill is a Python-based program with a GUI designed using the PyQt plug-in. 
 - Selenium web framework for browser automation
 
 ## How to Use
-1.) Clone the repository or download the files.
-2.) Install the required dependencies.
-3.) Run the program and fill out the required fields in the GUI.
-4.) Click the "Auto-Fill" button to automatically fill out the online submission form.
+1. Clone the repository or download the files.
+2. Install the required dependencies.
+3. You must have Python, pyinstaller, and additional dependencies [PyQT5](https://pypi.org/project/PyQt5/). Compile the program `python3 loadui.py` and fill out the required fields in the GUI.
+4. Click the "Auto-Fill" button to automatically fill out the online submission form.
 
 ## Future Improvements
 - Integrate support for a wider range of online submission forms.
