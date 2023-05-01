@@ -4,5 +4,5 @@ function setSelectedIndex(s, v) {for (var i = 0; i < s.options.length; i++) {if 
 document.getElementById('enddate_ld_job').value = '25-04-2022';
 document.getElementById('loondienst_soort_0').checked = false;
 document.getElementById('loondienst_soort_1').checked = true;
-document.getElementById('employer_name_ld').value = 'Dr. Fehmida Hussain';
-document.getElementById('work_location_ld').value = 'Middlesex University';
+document.getElementById('employer_name_ld').value = 'Jake Fernandas';
+document.getElementById('work_location_ld').value = 'Virginia Tech University';
