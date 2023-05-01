@@ -13,10 +13,6 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);
-border-color: rgb(0, 0, 0);</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="bt_pdf">
     <property name="geometry">
@@ -33,7 +29,9 @@ border-color: rgb(0, 0, 0);</string>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0.488636, y1:0.54, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255));
 font: 15pt &quot;Georgia&quot;;
-border-color: rgb(0, 0, 0);</string>
+border-color: rgb(0, 0, 0);
+border: 4px solid;
+</string>
     </property>
     <property name="text">
      <string>PDF</string>
@@ -63,7 +61,9 @@ border-color: rgb(0, 0, 0);</string>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0.488636, y1:0.54, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255));
 font: 15pt &quot;Georgia&quot;;
-border-color: rgb(0, 0, 0);</string>
+border-color: rgb(0, 0, 0);
+border: 4px solid;
+</string>
     </property>
     <property name="text">
      <string>Spreadsheet</string>
@@ -93,10 +93,16 @@ border-color: rgb(0, 0, 0);
 font: 75 20pt &quot;Georgia&quot;;</string>
     </property>
     <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="lineWidth">
-     <number>0</number>
+     <number>3</number>
+    </property>
+    <property name="midLineWidth">
+     <number>3</number>
     </property>
     <property name="text">
      <string>Select document type</string>
@@ -108,7 +114,30 @@ font: 75 20pt &quot;Georgia&quot;;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="lb_Title">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>801</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(0, 0, 0);
+background: url(../Auto-Fill/background_robo.jpg);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_Title_2">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -121,7 +150,8 @@ font: 75 20pt &quot;Georgia&quot;;</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Georgia&quot;;</string>
+     <string notr="true">font: 20pt &quot;Georgia&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -139,33 +169,11 @@ font: 75 20pt &quot;Georgia&quot;;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>50</y>
-      <width>801</width>
-      <height>591</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-   </widget>
    <zorder>frame</zorder>
    <zorder>bt_pdf</zorder>
    <zorder>bt_spreadsheet</zorder>
    <zorder>lb_main</zorder>
-   <zorder>lb_Title</zorder>
+   <zorder>lb_Title_2</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
